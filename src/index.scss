@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(https://fonts.googleapis.com/css?family=Neonderthaw);
+
+
+$colorNeon: #e91e63;
+$colorLightNeon: lighten($colorNeon, 30%);
+$shadowColor: adjust-hue($colorNeon, -30);
+$bgNeon: adjust-color($shadowColor, $lightness: -40%);
+
+.wrap {
+  animation: backgroundNeon 3s infinite;
+
+  img {
+    animation: imageDropshadowNeon 3s infinite;
+  }
+
+  h1 {
+    animation: textNeon 3s infinite;
+  }
+}
+
+
+
+@keyframes textNeon {
+  0% {
+    color: $colorNeon;
+    text-shadow: 0 0 10px $colorNeon, 1px 1px $colorLightNeon, 0 0 280px $shadowColor;
+  }
+
+  80% {
+    color: $colorNeon;
+    text-shadow: 0 0 10px $colorNeon, 1px 1px $colorLightNeon, 0 0 280px $shadowColor;
+  }
+
+  81% {
+    color: #222;
+    text-shadow: 0 0 10px #000, 1px 1px rgb(99, 74, 82), -2px 0px 4px #29121a;
+  }
+
+  94% {
+    color: #222;
+    text-shadow: 0 0 10px #000, 1px 1px rgb(99, 74, 82), -2px 0px 4px #29121a;
+  }
+
+  95% {
+    color: $colorNeon;
+    text-shadow: 0 0 10px $colorNeon, 1px 1px $colorLightNeon, 0 0 280px $shadowColor;
+  }
+
+  96% {
+    color: #222;
+    text-shadow: 0 0 10px #000, 1px 1px rgb(99, 74, 82), -2px 0px 4px #29121a;
+  }
+
+  97% {
+    color: $colorNeon;
+    text-shadow: 0 0 10px $colorNeon, 1px 1px $colorLightNeon, 0 0 280px $shadowColor;
+  }
+
+  98% {
+    color: $colorNeon;
+    text-shadow: 0 0 10px $colorNeon, 1px 1px $colorLightNeon, 0 0 280px $shadowColor;
+  }
+
+  99% {
+    color: #222;
+    text-shadow: 0 0 10px #000, 1px 1px rgb(99, 74, 82), -2px 0px 4px #29121a;
+  }
+
+  100% {
+    color: $colorNeon;
+    text-shadow: 0 0 10px $colorNeon, 1px 1px $colorLightNeon, 0 0 280px $shadowColor;
+  }
+}
+
+@keyframes imageDropshadowNeon {
+  0% {
+    filter: drop-shadow(1px 5px 10px $colorNeon) grayscale(100%);
+  }
+
+  80% {
+    filter: drop-shadow(1px 5px 10px $colorNeon);
+  }
+
+  81% {
+    filter: drop-shadow(1px 5px 10px #222) grayscale(100%);
+  }
+
+  94% {
+    filter: drop-shadow(1px 5px 10px #222) grayscale(100%);
+  }
+
+  95% {
+    filter: drop-shadow(1px 5px 10px $colorNeon);
+  }
+
+  96% {
+    filter: drop-shadow(1px 5px 10px #222) grayscale(100%);
+  }
+
+  97% {
+    filter: drop-shadow(1px 5px 10px $colorNeon);
+  }
+
+  98% {
+    filter: drop-shadow(1px 5px 10px $colorNeon);
+  }
+
+  99% {
+    filter: drop-shadow(1px 5px 10px #222) grayscale(100%);
+  }
+
+  100% {
+    filter: drop-shadow(1px 5px 10px $colorNeon);
+  }
+}
+
+@keyframes backgroundNeon {
+  0% {
+    background-color: $bgNeon;
+  }
+
+  80% {
+    background-color: $bgNeon;
+  }
+
+  81% {
+    background-color: #111;
+  }
+
+  94% {
+    background-color: #111;
+  }
+
+  95% {
+    background-color: $bgNeon;
+  }
+
+  96% {
+    background-color: #111;
+  }
+
+  97% {
+    background-color: $bgNeon;
+  }
+
+  98% {
+    background-color: $bgNeon;
+  }
+
+  99% {
+    background-color: #111;
+  }
+
+  100% {
+    background-color: $bgNeon;
+  }
+}
