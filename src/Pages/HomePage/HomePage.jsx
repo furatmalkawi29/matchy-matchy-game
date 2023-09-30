@@ -41,7 +41,7 @@ export const HomePage = () => {
                   max-[600px]:w-screen max-[600px]:bottom-[26vw] max-[600px]:left-[0vw]
         '
         />
-      <div>PLAY</div>
+      {/* <div>PLAY</div>
       color: #96b8b8;
     border: 5px double #ff5991;
     width: fit-content;
@@ -50,17 +50,14 @@ export const HomePage = () => {
     border-radius: 5px;
     font-size: 2.5vw;
     bottom: -12vw;
-    /* display: flex; */
-    /* justify-content: center; */
     margin: auto;
     font-weight: 400;
     z-index: 100;
     right: 22vw;
     position: absolute;
-    /* border-width: 15px; */
     border: 0.3vw solid #ff5991;
     outline: 0.4vw solid #85a1a6;
-    outline-offset: -1vw;
+    outline-offset: -1vw; */}
       </div>
 
     </div>
